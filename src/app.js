@@ -9,6 +9,7 @@ const servicioRoutes = require('./routes/servicioRoutes');
 const pacienteRoutes = require('./routes/pacienteRoutes');
 const citaRoutes = require('./routes/citaRoutes');
 const pagoCajaRoutes = require('./routes/pagoCajaRoutes');
+const usuarioRoutes = require('./routes/usuarioRoutes');
 
 // Inicializar la aplicación Express
 const app = express();
@@ -31,6 +32,7 @@ app.use('/api/servicios', servicioRoutes);
 app.use('/api/pacientes', pacienteRoutes);
 app.use('/api/citas', citaRoutes);
 app.use('/api/pagos', pagoCajaRoutes);
+app.use('/api/usuarios', usuarioRoutes);
 
 // Definir puerto y arrancar servidor
 const PORT = process.env.PORT || 4000;
